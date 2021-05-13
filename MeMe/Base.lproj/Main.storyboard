@@ -20,10 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="0ze-GG-3mQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="717"/>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvt-8r-MR6">
+                                <rect key="frame" x="20" y="107" width="374" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUD-mE-0M8">
-                                <rect key="frame" x="0.0" y="35" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="52" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="BKj-QF-Yms">
                                         <barButtonItem key="leftBarButtonItem" systemItem="action" id="AkL-JB-zPr">
@@ -39,8 +45,9 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s63-2Z-FoN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s63-2Z-FoN">
                                 <rect key="frame" x="20" y="769.5" width="374" height="18.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -63,31 +70,20 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="2hF-jh-1bU"/>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vvt-8r-MR6">
-                                <rect key="frame" x="20" y="107" width="374" height="18.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BAT-uI-CyJ"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="tUD-mE-0M8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7YL-EW-1JQ"/>
-                            <constraint firstAttribute="trailing" secondItem="tUD-mE-0M8" secondAttribute="trailing" id="7hH-h9-22O"/>
-                            <constraint firstItem="s63-2Z-FoN" firstAttribute="centerX" secondItem="RXm-Bp-gn8" secondAttribute="centerX" id="Ccu-00-cW9"/>
-                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H1c-5K-A6x"/>
-                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="K4v-zT-dT5"/>
-                            <constraint firstItem="vvt-8r-MR6" firstAttribute="leading" secondItem="s63-2Z-FoN" secondAttribute="leading" id="SnU-Ug-SGF"/>
-                            <constraint firstItem="RXm-Bp-gn8" firstAttribute="top" secondItem="s63-2Z-FoN" secondAttribute="bottom" constant="25" id="YGB-8B-a6w"/>
-                            <constraint firstItem="vvt-8r-MR6" firstAttribute="trailing" secondItem="s63-2Z-FoN" secondAttribute="trailing" id="YMM-mT-Dgz"/>
-                            <constraint firstItem="vvt-8r-MR6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="adN-eP-IyT"/>
-                            <constraint firstItem="RXm-Bp-gn8" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="cIN-Q4-O8e"/>
-                            <constraint firstItem="tUD-mE-0M8" firstAttribute="trailing" secondItem="0ze-GG-3mQ" secondAttribute="trailing" id="cUc-79-ioS"/>
-                            <constraint firstItem="tUD-mE-0M8" firstAttribute="trailing" secondItem="RXm-Bp-gn8" secondAttribute="trailing" id="fzQ-yC-ODw"/>
-                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="leading" secondItem="tUD-mE-0M8" secondAttribute="leading" id="hs8-AS-GUf"/>
-                            <constraint firstItem="tUD-mE-0M8" firstAttribute="leading" secondItem="RXm-Bp-gn8" secondAttribute="leading" id="mzc-mg-BLb"/>
-                            <constraint firstItem="vvt-8r-MR6" firstAttribute="top" secondItem="tUD-mE-0M8" secondAttribute="bottom" constant="28" id="pv0-Ho-nu5"/>
-                            <constraint firstItem="tUD-mE-0M8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="35" id="uw0-wy-pUr"/>
+                            <constraint firstItem="RXm-Bp-gn8" firstAttribute="top" secondItem="0ze-GG-3mQ" secondAttribute="bottom" id="0F0-BY-Wdi"/>
+                            <constraint firstItem="BAT-uI-CyJ" firstAttribute="bottom" secondItem="RXm-Bp-gn8" secondAttribute="bottom" id="0Oe-9q-yc2"/>
+                            <constraint firstItem="RXm-Bp-gn8" firstAttribute="leading" secondItem="BAT-uI-CyJ" secondAttribute="leading" id="26j-Ui-B7c"/>
+                            <constraint firstItem="tUD-mE-0M8" firstAttribute="top" secondItem="BAT-uI-CyJ" secondAttribute="top" constant="8" id="49c-6u-2Gl"/>
+                            <constraint firstItem="tUD-mE-0M8" firstAttribute="leading" secondItem="BAT-uI-CyJ" secondAttribute="leading" id="NSI-Er-Szk"/>
+                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="leading" secondItem="BAT-uI-CyJ" secondAttribute="leading" id="TKc-II-TNE"/>
+                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="trailing" secondItem="BAT-uI-CyJ" secondAttribute="trailing" id="dkM-fo-Ept"/>
+                            <constraint firstItem="0ze-GG-3mQ" firstAttribute="top" secondItem="tUD-mE-0M8" secondAttribute="bottom" id="gFM-4K-fps"/>
+                            <constraint firstItem="BAT-uI-CyJ" firstAttribute="trailing" secondItem="RXm-Bp-gn8" secondAttribute="trailing" id="hqN-P8-x3L"/>
+                            <constraint firstItem="BAT-uI-CyJ" firstAttribute="trailing" secondItem="tUD-mE-0M8" secondAttribute="trailing" id="x2o-iT-hwV"/>
                         </constraints>
                     </view>
                     <connections>
@@ -102,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-127.2" y="93.103448275862078"/>
+            <point key="canvasLocation" x="-127.53623188405798" y="93.080357142857139"/>
         </scene>
     </scenes>
 </document>
