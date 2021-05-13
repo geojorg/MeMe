@@ -101,7 +101,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @objc func keyboardWillShow(_ notification: Notification){
         if bottomText.isFirstResponder{
-        view.frame.origin.y = -getKeyboardHeight(notification)
+            view.frame.origin.y = -getKeyboardHeight(notification)
         }
     }
     
@@ -132,19 +132,23 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     @IBAction func shareButtonAction(_ sender: Any) {
-            let memedImage = generateMemedImage()
-            let activityController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
-            activityController.completionWithItemsHandler = { activity, success, items, error in
+        let memedImage = generateMemedImage()
+        let activityController = UIActivityViewController(activityItems: [memedImage], applicationActivities: nil)
+        
+        
+        activityController.completionWithItemsHandler = { (activity, completed, items, error) in
+            if completed {
                 self.save()
-                self.dismiss(animated: true, completion: nil)
             }
-            
-            present(activityController, animated: true, completion: nil)
-            
+            self.dismiss(animated: true, completion: nil)
         }
-        @IBAction func cancelButtonAction(_ sender: Any) {
-            topText.text = "TOP"
-            bottomText.text = "BOTTOM"
-            self.imagePickerView.image = nil
-        }
+        
+        present(activityController, animated: true, completion: nil)
+        
+    }
+    @IBAction func cancelButtonAction(_ sender: Any) {
+        topText.text = "TOP"
+        bottomText.text = "BOTTOM"
+        self.imagePickerView.image = nil
+    }
 }
