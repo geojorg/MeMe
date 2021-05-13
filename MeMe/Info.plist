@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app let you browse pictures to create memes</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app let you browse pictures to create memes</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app let you browse pictures to create memes</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
